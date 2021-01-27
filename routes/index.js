@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/:user_name', function(req, res, next) {
-  res.render('index', { title: req.params['name'] } );
+  res.render('index', { title: req.params['user_name'] } );
 });
 
 module.exports = router;
